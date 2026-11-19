@@ -10,6 +10,7 @@
 def main() -> None:
     print("Start coding in Python today!")
     print(2 + 2 + 2)
+    print(2 + 2 + 2+2)
 
 if __name__ == "__main__":
     main()
