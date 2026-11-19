@@ -1,0 +1,127 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.7687074829931972,
+    "precision": 0.37349397590361444,
+    "recall": 0.6595744680851063,
+    "f1_score": 0.47692307692307695,
+    "roc_auc": 0.81884744594711,
+    "pr_auc": 0.5555279788622829,
+    "confusion_matrix": {
+      "true_negative": 195,
+      "false_positive": 52,
+      "false_negative": 16,
+      "true_positive": 31,
+      "matrix": [
+        [
+          195,
+          52
+        ],
+        [
+          16,
+          31
+        ]
+      ]
+    },
+    "best_cv_f1": 0.5123416742472855,
+    "best_parameters": {
+      "classifier__C": 1.0,
+      "classifier__penalty": "l2",
+      "classifier__solver": "liblinear"
+    }
+  },
+  "random_forest": {
+    "accuracy": 0.8435374149659864,
+    "precision": 0.5135135135135135,
+    "recall": 0.40425531914893614,
+    "f1_score": 0.4523809523809524,
+    "roc_auc": 0.7873201826169351,
+    "pr_auc": 0.49862962675619454,
+    "confusion_matrix": {
+      "true_negative": 229,
+      "false_positive": 18,
+      "false_negative": 28,
+      "true_positive": 19,
+      "matrix": [
+        [
+          229,
+          18
+        ],
+        [
+          28,
+          19
+        ]
+      ]
+    },
+    "best_cv_f1": 0.495339775602598,
+    "best_parameters": {
+      "classifier__max_depth": 6,
+      "classifier__max_features": "sqrt",
+      "classifier__min_samples_leaf": 3,
+      "classifier__n_estimators": 200
+    }
+  },
+  "gradient_boosting": {
+    "accuracy": 0.8537414965986394,
+    "precision": 0.5833333333333334,
+    "recall": 0.2978723404255319,
+    "f1_score": 0.39436619718309857,
+    "roc_auc": 0.7967094495649927,
+    "pr_auc": 0.5362510278278353,
+    "confusion_matrix": {
+      "true_negative": 237,
+      "false_positive": 10,
+      "false_negative": 33,
+      "true_positive": 14,
+      "matrix": [
+        [
+          237,
+          10
+        ],
+        [
+          33,
+          14
+        ]
+      ]
+    },
+    "best_cv_f1": 0.576081412983692,
+    "best_parameters": {
+      "classifier__learning_rate": 0.1,
+      "classifier__max_depth": 2,
+      "classifier__n_estimators": 200,
+      "classifier__subsample": 0.8
+    }
+  },
+  "xgboost": {
+    "accuracy": 0.8027210884353742,
+    "precision": 0.4098360655737705,
+    "recall": 0.5319148936170213,
+    "f1_score": 0.46296296296296297,
+    "roc_auc": 0.7787923163063141,
+    "pr_auc": 0.50273943913056,
+    "confusion_matrix": {
+      "true_negative": 211,
+      "false_positive": 36,
+      "false_negative": 22,
+      "true_positive": 25,
+      "matrix": [
+        [
+          211,
+          36
+        ],
+        [
+          22,
+          25
+        ]
+      ]
+    },
+    "best_cv_f1": 0.5448191469447965,
+    "best_parameters": {
+      "classifier__colsample_bytree": 1.0,
+      "classifier__learning_rate": 0.03,
+      "classifier__max_depth": 3,
+      "classifier__n_estimators": 200,
+      "classifier__scale_pos_weight": 5,
+      "classifier__subsample": 0.8
+    }
+  }
+}
